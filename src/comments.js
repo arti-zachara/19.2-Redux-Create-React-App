@@ -15,7 +15,7 @@ export function comments(state = [], action) {
         {
           id: action.id,
           text: action.text,
-          rating: 0
+          votes: 0
         },
         ...state
       ];
@@ -38,7 +38,7 @@ export function comments(state = [], action) {
       return state.map(comment => {
         if (comment.id === action.id) {
           return Object.assign({}, comment, {
-            rating: action.rating + 1
+            votes: action.votes + 1
           });
         } else {
           return comment;
@@ -49,7 +49,7 @@ export function comments(state = [], action) {
       return state.map(comment => {
         if (comment.id === action.id) {
           return Object.assign({}, comment, {
-            rating: action.rating - 1
+            votes: action.votes - 1
           });
         } else {
           return comment;
