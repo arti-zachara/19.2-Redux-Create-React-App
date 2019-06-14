@@ -8,7 +8,7 @@ import {
 // ------ imports -------------------------------
 
 // ------ comments reducer ----------------------
-export function comments(state = [], action) {
+function comments(state = [], action) {
   switch (action.type) {
     case ADD_COMMENT:
       return [
@@ -60,3 +60,5 @@ export function comments(state = [], action) {
       return state;
   }
 }
+
+export default comments;
