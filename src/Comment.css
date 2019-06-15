@@ -18,6 +18,9 @@
   font-weight: bold;
   color: #44b1e4;
 }
+.comment-buttons {
+  align-self: flex-end;
+}
 
 .li-comment button {
   background-color: inherit;
