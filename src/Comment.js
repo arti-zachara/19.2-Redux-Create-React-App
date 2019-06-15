@@ -1,9 +1,39 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// ------------ inside-app imports ----------------------------------
+import "./Comment.css";
 
-const Comment = ({ text, votes }) => (
-  <li>
-    {text} <span>votes: {votes}</span>
+export const Comment = ({
+  text,
+  votes,
+  id,
+  thumbUpComment,
+  thumbDownComment,
+  removeComment,
+  editComment
+}) => (
+  <li className="li-comment">
+    {text}
+    <span className="votes"> votes: {votes}</span>
+    <div className="comment-buttons">
+      <button className="b-icon --thumbs-up" onClick={() => thumbUpComment(id)}>
+        <FontAwesomeIcon icon={["far", "thumbs-up"]} />
+      </button>
+      <button
+        className="b-icon --thumbs-down"
+        onClick={() => thumbDownComment(id)}
+      >
+        <FontAwesomeIcon icon={["far", "thumbs-down"]} />
+      </button>
+      <button className="b-icon --delete" onClick={() => removeComment(id)}>
+        <FontAwesomeIcon icon={["far", "trash-alt"]} />
+      </button>
+      <button
+        className="b-icon --edit"
+        onClick={() => editComment(id, prompt("edit"))}
+      >
+        <FontAwesomeIcon icon={["far", "edit"]} />
+      </button>
+    </div>
   </li>
 );
-
-export default Comment;
