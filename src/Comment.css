@@ -1,4 +1,5 @@
 .li-comment {
+  list-style-type: none;
   margin: 10px;
   padding: 10px;
   display: flex;
@@ -6,6 +7,8 @@
   justify-content: center;
   align-items: flex-start;
   background-color: #ffffff;
+  border: solid 2px lightblue;
+  border-radius: 10px;
 }
 
 .li-comment > .votes {
