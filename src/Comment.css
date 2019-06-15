@@ -9,19 +9,14 @@
   background-color: #ffffff;
   border: solid 2px lightblue;
   border-radius: 10px;
+  min-width: 400px;
+  max-width: 90%;
 }
 
 .li-comment > .votes {
   font-size: 0.8rem;
   font-weight: bold;
   color: #44b1e4;
-}
-
-.comment-buttons {
-  margin-top: 10px;
-  min-width: 400px;
-  display: flex;
-  justify-content: flex-end;
 }
 
 .li-comment button {

@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./CommentInput.css";
 
 export class CommentInput extends React.Component {
   state = {
@@ -22,7 +23,7 @@ export class CommentInput extends React.Component {
 
   render() {
     return (
-      <form onSubmit={e => this.handleSubmit(e)}>
+      <form className="comment-input-form" onSubmit={e => this.handleSubmit(e)}>
         <textarea
           name="input"
           placeholder="Your new comment"
@@ -32,7 +33,7 @@ export class CommentInput extends React.Component {
           onChange={e => this.handleChange(e)}
         />
         <button type="submit">
-          Add comment <FontAwesomeIcon icon={["far", "plus-square"]} />
+          Add your comment <FontAwesomeIcon icon={["far", "plus-square"]} />
         </button>
       </form>
     );

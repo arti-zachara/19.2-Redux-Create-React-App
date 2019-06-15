@@ -5,3 +5,12 @@
   flex-direction: column;
   align-items: center;
 }
+.App h1,
+.App h3 {
+  margin: 10px;
+}
+
+.App ul {
+  margin: 0;
+  padding: 0;
+}
