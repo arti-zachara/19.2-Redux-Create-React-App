@@ -21,11 +21,16 @@ textarea {
   background-color: #ffffff;
   color: #49e66b;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: bold;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .comment-input-form button:hover {
   background-color: #dfdbdb;
+}
+
+.comment-input-form button span {
+  margin: 0 0 0 12px;
+  font-weight: bolder;
 }

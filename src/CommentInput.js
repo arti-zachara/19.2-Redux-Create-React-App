@@ -25,7 +25,6 @@ export class CommentInput extends React.Component {
     return (
       <form className="comment-input-form" onSubmit={e => this.handleSubmit(e)}>
         <textarea
-          name="input"
           placeholder="Your new comment"
           rows="4"
           cols="30"
@@ -33,7 +32,10 @@ export class CommentInput extends React.Component {
           onChange={e => this.handleChange(e)}
         />
         <button type="submit">
-          Add your comment <FontAwesomeIcon icon={["far", "plus-square"]} />
+          Add your comment
+          <span>
+            <FontAwesomeIcon icon={["far", "plus-square"]} />
+          </span>
         </button>
       </form>
     );
