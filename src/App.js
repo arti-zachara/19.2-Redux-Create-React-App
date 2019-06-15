@@ -16,7 +16,7 @@ library.add(faThumbsUp, faThumbsDown, faTrashAlt, faEdit, faPlusSquare);
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="app">
       <h1>Comments:</h1>
       <CommentsListContainer />
       <h3>Add a comment</h3>
