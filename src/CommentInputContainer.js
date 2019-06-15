@@ -1,4 +1,5 @@
 import { connect } from "react-redux";
+// ------------ inside-app imports ----------------------------------
 import { CommentInput } from "./CommentInput";
 import { addComment } from "./actions";
 

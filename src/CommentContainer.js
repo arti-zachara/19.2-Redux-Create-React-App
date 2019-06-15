@@ -1,4 +1,5 @@
 import { connect } from "react-redux";
+// ------------ inside-app imports ----------------------------------
 import { Comment } from "./Comment";
 import {
   thumbUpComment,

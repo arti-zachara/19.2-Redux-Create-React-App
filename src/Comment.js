@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// ------------ inside-app imports ----------------------------------
 import "./Comment.css";
 
 export const Comment = ({

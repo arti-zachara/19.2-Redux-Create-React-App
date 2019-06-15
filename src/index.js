@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
+
 import { Provider } from "react-redux";
 import { createStore } from "redux";
+
+// ------------ inside-app imports ----------------------------------
+import * as serviceWorker from "./serviceWorker";
 import { reducer } from "./reducer";
-import { addComment } from "./actions";
 import DevTools from "./DevTools";
+import App from "./App";
+import { addComment } from "./actions";
+import "./index.css";
 
 const store = createStore(reducer, DevTools.instrument());
 
